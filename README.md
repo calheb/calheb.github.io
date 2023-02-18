@@ -1,2 +1,2 @@
 # ctrl-alt-caleb.github.io
-Caleb's Website
+just a simple website for fun.
