@@ -178,6 +178,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 /*==================== NAV ====================*/
@@ -899,16 +900,20 @@ img {
   }
 
   .home__blob {
-    width: 320px;
+    width: 302px;
   }
   .home__social {
     transform: translateX(-6rem);
   }
+  .home__social-icon { 
+    font-size: 2.5rem;
+    color: var(--first-color)
+  }
   .home__content {
-    grid-template-columns: max-content 1.2fr 1fr;
+    grid-template-columns: max-content 2fr 1fr;
   }
   .home__container {
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
   }
 
   .about__container,
