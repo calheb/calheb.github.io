@@ -376,6 +376,24 @@ img {
   align-items: center;
 }
 
+#button__form {
+  border: none;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  
+}
+
+#button__form:hover {
+  background-color: var(--first-color-alt);
+}
+
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
