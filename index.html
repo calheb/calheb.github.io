@@ -362,28 +362,31 @@
                             </div>
                         </div>
 
-                        <form action="http://formspree.io/caleb.b.hebert@outlook.com" method="POST" class="contact__form grid">
+                        <form action="https://formspree.io/f/xgebbndp" method="POST"class="contact__form grid">
                             <div class="contact__inputs grid">
                                 <div class="contact__content">
                                     <label for="" class="contact__label">Name</label>
-                                    <input type="text" class="contact__input">
+                                    <input type="text" name="Name" class="contact__input">
                                 </div>
                                 <div class="contact__content">
                                     <label for="" class="contact__label">Email</label>
-                                    <input type="email" name="replyto" class="contact__input">
+                                    <input type="email" name="Email" class="contact__input">
                                 </div>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Company</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="Company"class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
-                                <textarea name="body" id="" cols="0" rows="7" class="contact__input"></textarea>
+                                <textarea name="Message" id="" cols="0" rows="7" class="contact__input"></textarea>
                             </div>
 
                             <div>
-                                <input type="submit" value="Send Message" class="button button--flex" id="button__form">
+                                <button type="submit" class="button button--flex" id="button__form">
+                                    Send
+                                    <i class="uil uil-message button__icon"></i>
+                                </button>
                             </div>
                         </form>
                     </div>
