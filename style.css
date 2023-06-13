@@ -222,6 +222,8 @@ a {
 
 main {
     display: block;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
 .main__icons {
@@ -347,6 +349,13 @@ hr {
 /* Responsiveness */
 @media screen and (max-width: 685px) {
 
+    .post{
+        max-width: 350px;
+    }
+
+    .container {
+        justify-content: center;
+    }
 
     .menu-trigger {
         float: right;
