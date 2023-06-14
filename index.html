@@ -1,449 +1,98 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <title>☕ Caleb H | Personal Website</title>
+</head>
 
-        <title>🚀&nbsp;&nbsp;Caleb</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Caleb</a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Experience
-                            </a>
-                        </li>
-                        <!-- <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li> -->
-                        <li class="nav__item">
-                            <a href="#blog" class="nav__link">
-                                <i class="uil uil-newspaper nav__icon"></i> Blog
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps nav__icon"></i>
+<body class="">
+    <div class="container">
+        <header class="header">
+            <span class="header__inner">
+                <a href="index.html" style="text-decoration: none;">
+                    <div class="logo">
+                        <span class="logo__mark">Caleb</span>
+                        <span class="logo__text">Hebert</span>
+                        <span class="logo__cursor" style="visibility: hidden; background-color: #67a2c9;"></span>
                     </div>
-                </div>
-            </nav>
+                </a>
+                <span class="header__right">
+                    <nav class="menu hidden" id="menu">
+                        <ul class="menu__inner">
+                            <li>
+                                <a href="/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="/blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/projects.html">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/resume.html">Resume</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <span class="theme-toggle not-selectable">
+                        <a class="bi-moon" id="toggleDark"></a>
+                    </span>
+                    <span class="menu-trigger" id="menu-trigger">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                            </svg>
+                        </a>
+                    </span>
+                </span>
+            </span>
         </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://linkedin.com" target = "_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://discord.com" target = "_blank" class="home__social-icon">
-                                <i class="uil uil-discord"></i>
-                            </a>
-                            <a href="http://discord.com" target = "_blank" class="home__social-icon">
-                                <i class="uil uil-github"></i>
-                            </a>
-                        </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 15 15">
-                            <mask id="mask0" mask-type="alpha">
-                            <path d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"/>
-                                <image class="home__blob-img" x='1.5' y='1' href="assets/img/polygon_pfp.png"/>
-                            </g>
-                            </svg>   
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Caleb 👋</h1>
-                            <h3 class="home__subtitle">Software Developer</h3>
-                            <p class="home__description">I build things for the web.</p>
-                            <a href="#contact" class="button button--flex">
-                               Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <span class="home__scroll-name">scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        <div class="content">
+            <main aria-role="main">
+                <div>
+                    <h1 style="margin-bottom:10px">Caleb Hebert</h1>
+                    <p style="margin-bottom: 20px;">Software Developer</p>
+                    <div class="main__icons">
+                        <a href="mailto:caleb.b.hebert@outlook.com" target="_blank" rel="noopener" title="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/ctrl-alt-caleb" target="_blank" rel="noopener" title="Github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/calebhebert" target="_blank" rel="noopener"
+                            title="Linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                        <a href="https://discordapp.com/users/caleb.cpp" target="_blank" rel="noopener" title="Discord">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-discord" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">my introduction</span>
-                <div class="about__container container grid">
-                    <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">
-                            Full stack web developer focused on delivering superb user experiences.
-                        </p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">🤓</span>
-                                <span class="about__into-name">active <br/>learner</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">🔎</span>
-                                <span class="about__into-name">detail-<br/>oriented</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">❤️</span>
-                                <span class="about__into-name">passion for <br/>the craft</span>
-                            </div>
-                        </div>
-
-                        <div class="about__buttons" id="button__CV">
-                            <a download = "" href="assets/pdf/resume-placeholder.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== EXPERIENCE ====================-->
-            <section class="qualification section" id="skills">
-                    <h2 class="section__title">Experience</h2>
-                    <span class="section__subtitle">my personal journey.</span>
-
-                    <div class="qualification__container container">
-                        <div class="qualification__tabs">
-                            <div class="qualification__button button--flex" data-target='#education'>
-                                <i class="uil uil-graduation-cap qualification__icon"></i>
-                                Education
-                            </div>
-
-                            <div class="qualification__button button--flex qualification__active" data-target='#work'>
-                                <i class="uil uil-briefcase-alt qualification__icon"></i>
-                                Work
-                            </div>
-                        </div>
-
-                        <div class="div qualification__sections">
-                            <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                            <div class="qualification__content" data-content id="education">
-                                <!--==================== QUALIFICATION 1 ====================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">Security+</h3>
-                                        <span class="qualification__subtitle">CompTIA</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2018
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
-                                </div>
-                                <!--==================== QUALIFICATION 2 ====================-->
-                                <div class="qualification__data">
-                                    <div></div>
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
-                                    <div>
-                                        <h3 class="qualification__title">Computer Science</h3>
-                                        <span class="qualification__subtitle">Hawaii Pacific University ✈️</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2019 - 2022
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--==================== QUALIFICATION 3 ====================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">Computer Science</h3>
-                                        <span class="qualification__subtitle">Western Governors University</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2023
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <!-- <span class="qualification__line"></span> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                            <div class="qualification__content qualification__active" data-content id="work">
-                                <!--==================== QUALIFICATION 1 ====================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">VDI Engineer</h3>
-                                        <span class="qualification__subtitle">US Air Force</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2018 - 2022
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
-                                </div>
-                                <!--==================== QUALIFICATION 2 ====================-->
-                                <div class="qualification__data">
-                                    <div></div>
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="qualification__title">Cloud Application Developer</h3>
-                                        <span class="qualification__subtitle">Intern - Microsoft</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            Summer 2022
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="qualification__line"></span>
-                                    </div>
-                                </div>
-                                <!--==================== QUALIFICATION 3 ====================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title"> Full Stack Software Developer</h3>
-                                        <span class="qualification__subtitle">DTSI</span>
-                                        <div class="qualification calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2022 - Present
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <!-- <section class="portfolio section" id="portfolio"> -->
-                <!-- <h2 class="section__title">Portfolio</h2> -->
-                <!-- <span class="section__subtitle">some of my recent work</span> -->
-                <!-- <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper"> -->
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <!-- <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Website</h3>
-                                <p class="portfolio__description">website description</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div> -->
-
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <!-- <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Website</h3>
-                                <p class="portfolio__description">website description</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div> -->
-
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <!-- <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Website</h3>
-                                <p class="portfolio__description">website description</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Add Arrows -->
-                    <!-- <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section> -->
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <section class="contact section" id="contact">
-                    <h2 class="section__title">Contact Me</h2>
-                    <span class="section__subtitle">get in touch</span>
-
-                    <div class="contact__container container grid">
-                        <div>
-                            <div class="contact__information">
-                                <i class="uil uil-envelope contact__icon"></i>
-
-                                <div>
-                                    <h3 class="contact__title">Email</h3>
-                                    <span class="contact__subtitle">caleb.b.hebert@outlook.com</span>
-                                </div>
-                            </div>
-
-                            <div class="contact__information">
-                                <i class="uil uil-map-marker contact__icon"></i>
-
-                                <div>
-                                    <h3 class="contact__title">Location</h3>
-                                    <span class="contact__subtitle">United States</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <form action="https://formspree.io/f/xgebbndp" method="POST"class="contact__form grid">
-                            <div class="contact__inputs grid">
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Name</label>
-                                    <input type="text" name="Name" class="contact__input" required>
-                                </div>
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Email</label>
-                                    <input type="email" name="Email" class="contact__input" required>
-                                </div>
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Company</label>
-                                <input type="text" name="Company"class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="Message" id="" cols="0" rows="7" class="contact__input" required></textarea>
-                            </div>
-
-                            <div>
-                                <button type="submit" class="button button--flex" id="button__form">
-                                    Send
-                                    <i class="uil uil-message button__icon"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h2 class="footer__title">Caleb</h2>
-                        <span class="footer__subtitle">Software Developer</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#home" class="footer__link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="footer__link">Blog</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li> -->
-                        <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://linkedin.com" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-                        <a href="https://discord.com" target="_blank" class="footer__social">
-                            <i class="uil uil-discord"></i>
-                        </a>
-                        <a href="https://github.com" target="_blank" class="footer__social">
-                            <i class="uil uil-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="footer__copy">&#169; Caleb 2023</p>
-            </div>
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
-
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            </main>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>
