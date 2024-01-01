@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ventoy on caleb.foo</title>
-    <link>http://localhost:1313/tags/ventoy/</link>
+    <link>https://caleb.foo/tags/ventoy/</link>
     <description>Recent content in ventoy on caleb.foo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Caleb Hebert</copyright>
-    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ventoy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://caleb.foo/tags/ventoy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install and use Ventoy</title>
-      <link>http://localhost:1313/post/howto_ventoy/</link>
+      <link>https://caleb.foo/post/howto_ventoy/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/howto_ventoy/</guid>
+      <guid>https://caleb.foo/post/howto_ventoy/</guid>
       <description>
         
           

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on caleb.foo</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://caleb.foo/post/</link>
     <description>Recent content in Posts on caleb.foo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Caleb Hebert</copyright>
-    <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://caleb.foo/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring OpenSSH</title>
-      <link>http://localhost:1313/post/howto_ssh/</link>
+      <link>https://caleb.foo/post/howto_ssh/</link>
       <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/howto_ssh/</guid>
+      <guid>https://caleb.foo/post/howto_ssh/</guid>
       <description>
         
           
@@ -28,10 +28,10 @@ I&#39;ll be using OpenSSH to remotely manage and transfer files to my media serv
     
     <item>
       <title>How to Install and use Ventoy</title>
-      <link>http://localhost:1313/post/howto_ventoy/</link>
+      <link>https://caleb.foo/post/howto_ventoy/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/howto_ventoy/</guid>
+      <guid>https://caleb.foo/post/howto_ventoy/</guid>
       <description>
         
           

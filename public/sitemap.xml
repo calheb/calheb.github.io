@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://caleb.foo/about/</loc>
     <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://caleb.foo/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/howto_ssh/</loc>
+    <loc>https://caleb.foo/post/howto_ssh/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/misc/</loc>
+    <loc>https://caleb.foo/tags/misc/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://caleb.foo/post/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ssh/</loc>
+    <loc>https://caleb.foo/tags/ssh/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://caleb.foo/tags/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/howto_ventoy/</loc>
+    <loc>https://caleb.foo/post/howto_ventoy/</loc>
     <lastmod>2023-05-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ventoy/</loc>
+    <loc>https://caleb.foo/tags/ventoy/</loc>
     <lastmod>2023-05-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/downloads/</loc>
+    <loc>https://caleb.foo/downloads/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://caleb.foo/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://caleb.foo/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://caleb.foo/series/</loc>
   </url>
 </urlset>
