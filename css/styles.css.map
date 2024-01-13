@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/runner/work/calheb.github.io/calheb.github.io",
+	"sourceRoot": "/home/runner/work/personalsite/personalsite",
 	"sources": [
 		"/tmp/hugo_cache_runner/modules/filecache/modules/pkg/mod/github.com/chipzoller/hugo-clarity@v0.0.0-20231231125604-4b08ddee9984/assets/sass/main.sass",
 		"assets/sass/_variables.sass",
